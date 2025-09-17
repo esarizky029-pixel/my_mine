@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Story Album</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .heart {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .photo-card {
+            transition: all 0.3s ease;
+        }
+        .photo-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+        }
+        .love-quote {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-pink-50 min-h-screen">
+    <header class="text-center py-10 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-5">
+            <div class="heart absolute text-red-400 text-4xl" style="top:10%; left:15%">❤</div>
+            <div class="heart absolute text-red-400 text-6xl" style="top:20%; right:20%">❤</div>
+            <div class="heart absolute text-red-400 text-3xl" style="bottom:15%; left:25%">❤</div>
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold love-quote mb-4">Our Love Story</h1>
+        <p class="text-xl text-pink-600">Every moment with you is special</p>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Photo 1 -->
+            <div class="photo-card bg-white rounded-xl overflow-hidden shadow-lg">
+                <div class="h-64 overflow-hidden">
+                    <img 
+                        src="images/p3.jpg" 
+                        alt="Couple holding hands on a beach at sunset with golden light reflecting on the water" 
+                        class="w-full h-full object-cover"
+                        onerror="this.onerror=null;this.src='images/p3.jpg?text=Loading+Error'">
+                </div>
+                <div class="p-5">
+                    <p class="text-pink-600 italic">"Photobox ."</p>
+                    <p class="text-gray-500 mt-2 text-sm">12 Mei 2024</p>
+                </div>
+            </div>
+            
+            <!-- Photo 2 -->
+            <div class="photo-card bg-white rounded-xl overflow-hidden shadow-lg">
+                <div class="h-64 overflow-hidden">
+                    <img 
+                        src="images/p1.jpg" 
+                        alt="Romantic candlelight dinner with rose petals on the table in a fancy restaurant" 
+                        class="w-full h-full object-cover"
+                        onerror="this.onerror=null;this.src='images/p1.jpg?text=Loading+Error'">
+                </div>
+                <div class="p-5">
+                    <p class="text-pink-600 italic">"Cinere mall."</p>
+                    <p class="text-gray-500 mt-2 text-sm">11 june 2024</p>
+                </div>
+            </div>
+            
+            <!-- Photo 3 -->
+            <div class="photo-card bg-white rounded-xl overflow-hidden shadow-lg">
+                <div class="h-64 overflow-hidden">
+                    <img 
+                        src="images/p2.jpg" 
+                        alt="Couple laughing together in a field of flowers during spring with mountains in the background" 
+                        class="w-full h-full object-cover"
+                        onerror="this.onerror=null;this.src='images/p2.jpg?text=Loading+Error'">
+                </div>
+                <div class="p-5">
+                    <p class="text-pink-600 italic">"Your laughter is my favorite sound."</p>
+                    <p class="text-gray-500 mt-2 text-sm">Spring Picnic •  2024</p>
+                </div>
+            </div>
+            
+            <!-- Photo 4 -->
+            <div class="photo-card bg-white rounded-xl overflow-hidden shadow-lg">
+                <div class="h-64 overflow-hidden">
+                    <img 
+                        src="images/p5.jpg" 
+                        alt="Couple wearing matching pajamas sitting by a Christmas tree with warm holiday lights" 
+                        class="w-full h-full object-cover"
+                        onerror="this.onerror=null;this.src='images/p5.jpg?text=Loading+Error'">
+                </div>
+                <div class="p-5">
+                    <p class="text-pink-600 italic">"Our first Christmas together was magical."</p>
+                    <p class="text-gray-500 mt-2 text-sm">Christmas Eve • December 2022</p>
+                </div>
+            </div>
+            
+            <!-- Photo 5 -->
+            <div class="photo-card bg-white rounded-xl overflow-hidden shadow-lg">
+                <div class="h-64 overflow-hidden">
+                    <img 
+                        src="images/p6.jpg" 
+                        alt="Couple hiking together at mountain peak during sunrise with breathtaking view" 
+                        class="w-full h-full object-cover"
+                        onerror="this.onerror=null;this.src='images/p6.jpg?text=Loading+Error'">
+                </div>
+                <div class="p-5">
+                    <p class="text-pink-600 italic">"Life's adventures are better with you."</p>
+                    <p class="text-gray-500 mt-2 text-sm">Mountain Trip • September 2023</p>
+                </div>
+            </div>
+            
+            <!-- Photo 6 -->
+            <div class="photo-card bg-white rounded-xl overflow-hidden shadow-lg">
+                <div class="h-64 overflow-hidden">
+                    <img 
+                        src="images/p4.jpg" 
+                        alt="Close-up of couple's faces touching foreheads with soft lighting and bokeh background" 
+                        class="w-full h-full object-cover"
+                        onerror="this.onerror=null;this.src='images/p4.jpg?text=Loading+Error'">
+                </div>
+                <div class="p-5">
+                    <p class="text-pink-600 italic">"In your eyes, I found my home."</p>
+                    <p class="text-gray-500 mt-2 text-sm">Date Night • March 2023</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-8">
+        <div class="love-message p-4 rounded-lg">
+            <p class="text-lg text-pink-600">Every love story is beautiful
